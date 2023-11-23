@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus on Today</title>
+</head>
+
+<body>
+    <div>
+        <div class="wrap">
+            <h2 style="text-align: center;">focus on <span>Today </span> </h2>
+            <div class="inner-box">
+                <div>
+                    <span>Today</span>
+                    <img src="Vector.png" alt="">
+                </div>
+                <p>Raise the bar by completing your goals!</p>
+                <div class="progress">
+                    <div class="bar">
+
+                    </div>
+                </div>
+                <div class="error"></div>
+                <ul>
+                    <li>
+
+                        <input type="text" id="one" placeholder="add a new goal">
+                        <span></span>
+                    </li>
+                    <li>
+                        <span></span>
+
+                        <input type="text" name="" id="two" placeholder="add a new goal">
+                    </li>
+                    <li>
+                        <span></span>
+
+                        <input type="text" name="" id="three" placeholder="add a new goal">
+                    </li>
+                </ul>
+                <h3>“Move one step ahead, today!”</h3>
+                <h5>Made with ❤️ by Abhishek Patel</h5>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        .wrap {
+            max-width: 600px;
+            background-color: rgb(255, 251, 251);
+            margin: 50px auto;
+
+        }
+
+        .inner-box {
+            box-shadow: 0 0 10px 2px #d5d1d1;
+            padding: 32px;
+            border-radius: 10px;
+
+        }
+
+        .inner-box span {
+            font-size: 1.7rem;
+            margin-right: 10px;
+            font-weight: bolder;
+
+        }
+
+        .inner-box div {
+            display: flex;
+            align-items: center;
+        }
+
+        .wrap h2 {
+            text-transform: capitalize;
+            color: #48A300;
+            font-size: 4rem;
+            font-weight: 700;
+        }
+
+        .wrap h2 span {
+            color: initial;
+        }
+
+        .inner-box .progress {
+            height: 20px;
+            background-color: #eaeee7;
+            border-radius: 20px;
+        }
+
+        .inner-box h3,
+        h5 {
+            text-align: center;
+        }
+
+        ul {
+            padding: 0;
+            margin-top: 30px;
+        }
+
+        ul li {
+            list-style-type: none;
+            display: flex;
+            gap: 10px;
+            padding: 16px;
+            text-transform: capitalize;
+            font-weight: 500;
+            margin-bottom: 50px;
+            box-shadow: 0 0 2px 2px #ded6d6;
+            border-radius: 10px;
+            position: relative;
+        }
+
+
+
+        ul li input[type='checkbox']:checked~ul li label::after {
+            display: block;
+        }
+
+        ul li input[type='text'] {
+            border: none;
+            outline: none;
+            flex: 1;
+            margin: 0 20px;
+            text-transform: capitalize;
+            font-size: 1rem;
+
+
+
+        }
+
+        ul li span {
+            content: '';
+            width: 15px;
+            position: absolute;
+            height: 15px;
+            border-radius: 50%;
+            left: 10px;
+            background-color: rgb(232, 232, 232);
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        .checked {
+            background-color: #48A300;
+        }
+
+        ul li span img {
+            position: absolute;
+            padding: 3px;
+            margin-left: -2px;
+            scale: 0.8;
+
+        }
+
+        .error p {
+            color: red;
+            font-size: 14px;
+            text-transform: capitalize;
+
+
+        }
+
+        .progress .bar {
+            background-color: #48A300;
+            height: 100%;
+            transition: width ease-in-out 500ms;
+
+        }
+    </style>
+    <script src="index.js"></script>
+</body>
+
+</html>
